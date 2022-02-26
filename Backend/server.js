@@ -1,12 +1,14 @@
 const express = require("express");
 const notes = require("./data/notes");
 const dotenv = require("dotenv");
+const connectDB = require("./config/db");
 
 const app = express();
 dotenv.config();
+connectDB();
 
 app.get("/", (req, res) => {
-  res.send("API is running on PORT 5000");
+  res.send(`API is running on PORT ${PORT}`);
 });
 
 app.get("/api/notes", (req, res) => {

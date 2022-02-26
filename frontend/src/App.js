@@ -1,13 +1,23 @@
-import './App.css';
+import "./App.css";
+import React from "react";
+import Header from "components/header/header";
+import Footer from "components/footer/footer";
+import LandingPage from "screens/landingPage/landingPage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MyNotes from "screens/MyNotes/MyNotes";
 
-const App = () => {
-  const exclamation = '!!!';
-  return (
-    <div>
-      <div className="App">Hello world{exclamation}</div>
-      <div className="App">How are you?{exclamation}</div>
-    </div>
-  );
-}
+const App = () => (
+  <BrowserRouter>
+    <Header />
+    <main>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/mynotes" element={<MyNotes />} />
+      </Routes>
+    </main>
+    <Footer />
+  </BrowserRouter>
+);
 
 export default App;
+//  <main style={{minHeight: "93vh"}}></main>

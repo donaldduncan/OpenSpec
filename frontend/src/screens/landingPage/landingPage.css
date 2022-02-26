@@ -1,0 +1,33 @@
+.main {
+  min-height: 93vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://picsum.photos/seed/donnie/2000/3000");
+  background-position: center;
+  background-size: cover;
+}
+
+.welcome {
+  color: aliceblue;
+  text-shadow: #111 1px 0 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: 6vw;
+}
+
+.subtitle {
+  font-size: 4vw;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.landingButton {
+    width: 200px;
+}
