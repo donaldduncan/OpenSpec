@@ -17,8 +17,7 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
 import HomeIcon from "@mui/icons-material/Home";
-import { Link } from "@mui/material";
-import { BrowserRouter, Link as RouterLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -189,7 +188,7 @@ export default function Header() {
               size="large"
               aria-label="go home"
               color="inherit"
-              component={RouterLink}
+              component={Link}
               to="/"
             >
                 <HomeIcon />
@@ -198,7 +197,7 @@ export default function Header() {
               size="large"
               aria-label="show 17 new objects"
               color="inherit"
-               component={RouterLink}
+               component={Link}
                to="/mynotes"
                           >
               <Badge badgeContent={17} color="error">
